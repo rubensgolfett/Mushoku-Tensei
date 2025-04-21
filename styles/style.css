@@ -83,6 +83,9 @@ main > img {
     max-width: 800px;
     margin: 0 auto;
     background-color: var(--cor-branco);
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 12px;
 }
 
 #sinopse h1 {
