@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --font01: 'Merriweather', serif;
+    --font02: 'Orbitron', sans-serif;
+
+    --cor-fundo: #e7dfd8e1; 
+    --cor-texto: #2c2c2c;
+    --cor-header-footer: #1e1e2f;
+    --cor-titulo: #1f2e5a;
+    --cor-branco: #f5f1ebe8;  
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font02);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+body p {
+    font-family: var(--font01);
+    font-size: 1.2rem;
+}
+
+header {
+    background-color: var(--cor-header-footer);
+    color: whitesmoke;
+    margin: auto;
+    padding: 1vh;
+}
+
+header img {
+    width: 250px;
+    height: 100%
+}
+
+nav {
+    background-color: var(--cor-header-footer);
+    padding: 10px;
+}
+
+a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 7px;
+    transition: 1s;
+}
+
+a:hover {
+    background-color: var(--cor-titulo);
+    color: var(--cor-branco);
+    padding: 5px;
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+main > img {
+    margin: auto;
+}
+
+#sinopse {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#sinopse h1 {
+    font-family: var(--font01);
+    color: var(--cor-header-footer);
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.personagens {
+    background-color: var(--cor-header-footer);
+    max-width: 800px;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 20px 5px 5px 20px;
+}
+
+.personagens > h1 {
+    font-family: var(--font02);
+    color: rgba(255, 255, 255, 0.822);
+    background-color: var(--cor-header-footer);
+    font-size: 2rem;
+    
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.personagem {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.conteudo-personagem {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar para celular */
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.conteudo-personagem img {
+    width: 45%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0; /* Evita que a imagem diminua demais */
+}
+
+.conteudo-personagem p {
+    flex: 1;
+    min-width: 200px;
+    text-align: justify;
+} 
+
+  /* Responsivo para telas menores */
+@media (max-width: 768px) {
+    .conteudo-personagem {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .conteudo-personagem img {  
+        max-width: 70%;
+    }
+
+    .conteudo-personagem p {
+        text-align: justify;
+        width: 100%;
+        }
+}
+
+#roxy {
+    border-radius: 20px;
+    background-color: #FFFFFF; 
+}
+
+#roxy img {
+    width: 85%;
+}
+
+#rudeus {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+#sylphi {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+#paul {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+#eris {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+#eris img {
+    width: 55%;
+}
+
+#zenith {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+.informacoes {
+    margin-top: 20px;
+    background-color: var(--cor-branco);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.informacoes h2 {
+    font-family: var(--font02);
+    font-size: 2rem;
+    text-align: center;
+    margin: 0px;
+}
+
+.informacoes p{
+    display: flex;
+    align-items: center;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin-bottom: 15px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.trailer {
+    background-color: var(--cor-branco);
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.trailer h2 {
+    font-family: var(--font02);
+    font-size: 2rem;
+    text-align: center;
+    margin: 0px;
+}
+
+footer{
+    color: var(--cor-fundo);
+    text-align: center;
+    padding: 5px;
+    background-color: var(--cor-header-footer);
+}
